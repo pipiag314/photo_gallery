@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    gap: 20px;
+    align-items: center;
+}
+
+.back {
+    font-size: 30px;
+    
+}
