@@ -1,0 +1,15 @@
+.navbar {
+    background-color: red;
+    padding: 20px 40px;
+}
+
+.list_container {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.list_container li {
+    font-size: 24px;
+}
