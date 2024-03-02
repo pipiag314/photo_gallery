@@ -8,7 +8,7 @@ interface PhotoCardProps {
 
 const PhotoCard = forwardRef<HTMLDivElement, PhotoCardProps>(
   ({ photo }, ref) => {
-    const componentBody = <img className={style.PhotoCard_img} src={photo.urls.small} />;
+    const componentBody = <img className={style.PhotoCard_img} src={photo.urls.small} alt={photo.alt_description} />;
 
     const content = ref ? (
       <div ref={ref}>{componentBody}</div>

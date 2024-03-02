@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import './App.css'
 import Home from './pages/Home/Home';
 import History from './pages/History/History';
 import RootLayout from './RootLayout';
@@ -20,7 +19,7 @@ const router = createBrowserRouter([
         element: <History />,
       },
       {
-        path: "/history/:id",
+        path: "/history/:query",
         element: <Searched />
       }
     ]
