@@ -18,3 +18,16 @@ export type PhotoType = {
 }
 
 
+export type PhotoStatsType = {
+    downloads: {
+        total: number
+    };
+    views: {
+        total: number
+    };
+    likes: {
+        total: number
+    }
+    id: string;
+    slig: string;
+}

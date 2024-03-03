@@ -17,3 +17,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.photoCard_container {
+    overflow: hidden;
+}
