@@ -43,13 +43,20 @@ export const getPhotosByQuery = async (query: string, page = 1, option = {}) => 
     return {results: res.data.results, total_pages: res.data.total_pages};
 }
 
-
+const cacheStatistics: Record<string, any> = {};
 export const getPhotosStatistics = async (id: string, option = {}) => {
     const URL = `${import.meta.env.VITE_UNSPLASH_API_BASE_URL}/photos/${id}/statistics`;
+
+    if(cacheStatistics[URL]) {
+        return cacheStatistics[URL]
+    }
+    
     const res = await axios.get(URL, {
         ...option,
         headers: request_header,
     })
 
+    cacheStatistics[URL] = res.data;
+    
     return res.data;
 }
