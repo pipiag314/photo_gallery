@@ -44,7 +44,7 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
           alt={photoOnModal?.alt_description}
         />
         <button className={style.close} onClick={() => toggleModal()}>
-          Close
+          ❌
         </button>
         <div className={style.stats}>
           <p>Likes: {likes}</p>
