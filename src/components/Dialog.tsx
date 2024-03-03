@@ -2,6 +2,7 @@ import { forwardRef, useEffect, useState } from "react";
 import { PhotoType } from "../types/photoType";
 import style from "./Dialog.module.css";
 import { getPhotosStatistics } from "../api/getPhotos";
+import { numberFormatter } from "../utils/numberFormatter";
 
 interface DialogProps {
   toggleModal: () => void;
@@ -47,9 +48,9 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
           ❌
         </button>
         <div className={style.stats}>
-          <p>Likes: {likes}</p>
-          <p>Downloads: {downloads}</p>
-          <p>Views: {views}</p>
+          <p>Likes: {numberFormatter(likes) }</p>
+          <p>Downloads: {numberFormatter(downloads)}</p>
+          <p>Views: {numberFormatter(views)}</p>
         </div>
       </dialog>
     );
