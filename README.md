@@ -4,7 +4,7 @@ This is a simple photo gallery app built with React and Vite.
 
 ## Live Deployment
 
-coming soon
+Follow Link: https://foto-gallery-app.netlify.app/
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ To get started with this project on your local machine, follow the steps below:
 
 Make sure you have Node.js and npm (or yarn) installed on your machine.
 
-### Instalation
+### Installation
 
 1. Clone this repository to your local machine using:
 
