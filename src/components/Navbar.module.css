@@ -13,3 +13,9 @@
 .list_container li {
     font-size: 24px;
 }
+
+.list_container li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
