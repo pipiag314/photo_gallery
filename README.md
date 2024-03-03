@@ -1,30 +1,103 @@
-# React + TypeScript + Vite
+# Photo Gallery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple photo gallery app built with React and Vite.
 
-Currently, two official plugins are available:
+## Live Deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+coming soon
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with this project on your local machine, follow the steps below:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Make sure you have Node.js and npm (or yarn) installed on your machine.
+
+### Instalation
+
+1. Clone this repository to your local machine using:
+
+```bash
+git clone https://github.com/pipiag314/photo_gallery.git
+```
+2. Navigate to the project directory:
+
+```bash
+cd photo_gallery
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Install dependencies:
+```bash
+npm install 
+# or
+yarn install
+```
+
+4. Register on Unsplash, Create new application and get access key:
+
+Follow this link: [Unsplash][unsplash-website]
+
+[unsplash-website]: https://unsplash.com/
+
+
+5. Create .env file: 
+
+```.env
+VITE_UNSPLASH_API_BASE_URL = https://api.unsplash.com
+VITE_UNSPLASH_ACCESS_KEY = YOUR_ACCESS_KEY
+```
+
+### Running the App
+
+Once you've installed all the dependencies, you can run the app using:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+This command starts the development server and opens the app in your default web browser. If it does not open automatically you can open it with typing 'o' character, or manually open it with 'http://localhost:5173/':
+
+```bash
+  VITE v5.1.4  ready in 913 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+# when it's ready type 'o' and enter
+o
+```
+
+
+### Building for Production
+
+To build the app for production, you can run:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+This command generates a production-ready build of your app in the 'dist' directory.
+
+
+## Features
+
+- SPA
+- Display a grid of popular photos
+- Clicking on a photo opens modal with statistic's
+- Caching recieved requests
+- Pagination, Infinit Scroll
+- Search photos based on user inputs
+- Responsive Design
+
+## Technology Used
+
+- react
+- vite
+- react-router-dom (for Routing)
+- axios
